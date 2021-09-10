@@ -1,0 +1,38 @@
+<div>
+  <h2 class="content-block">Products</h2>
+  <dx-data-grid id="gridContainer" [dataSource]="products" keyExpr="id" [showBorders]="true"
+    (onRowUpdated)="eventListener($event,'updateRow')"
+    (onRowRemoved)="eventListener($event,'removeRow')"
+    (onRowInserted)="eventListener($event,'insertRow')"
+    >
+    <dxo-paging [enabled]="false"></dxo-paging>
+    <dxo-editing mode="popup" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true">
+      <dxo-popup title="Product Info" [showTitle]="true" [width]="700" [height]="525">
+      </dxo-popup>
+      <dxo-form>
+        <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+          <dxi-item dataField="code">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+          </dxi-item>
+          <dxi-item dataField="desciption">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+          </dxi-item>
+          <dxi-item dataField="value">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+          </dxi-item>
+        </dxi-item>
+      </dxo-form>
+    </dxo-editing>
+    <dxi-column dataField="code" caption="Code" [hidingPriority]="1">
+    </dxi-column>
+    <dxi-column dataField="desciption" caption="Description" [hidingPriority]="2">
+    </dxi-column>
+    <dxi-column dataField="value" caption="Value" [hidingPriority]="3">
+    </dxi-column>
+    <dxi-column dataField="createdAt" caption="Created At" dataType="datetime" [hidingPriority]="4">
+    </dxi-column>
+
+  </dx-data-grid>
+  <dx-toast [(visible)]="isVisible" [type]="type" [message]="message">
+  </dx-toast>
+</div>

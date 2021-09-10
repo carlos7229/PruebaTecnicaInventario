@@ -1,0 +1,12 @@
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\bin\Debug\net5.0\PruebaTecnicaInventario.Core.deps.json
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\bin\Debug\net5.0\PruebaTecnicaInventario.Core.dll
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\bin\Debug\net5.0\ref\PruebaTecnicaInventario.Core.dll
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\bin\Debug\net5.0\PruebaTecnicaInventario.Core.pdb
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.csproj.AssemblyReference.cache
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.AssemblyInfoInputs.cache
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.AssemblyInfo.cs
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.csproj.CoreCompileInputs.cache
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.dll
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\ref\PruebaTecnicaInventario.Core.dll
+C:\Users\car72\Desktop\Repos\PruebaTecnicaInventario\PruebaTecnicaInventario.Core\obj\Debug\net5.0\PruebaTecnicaInventario.Core.pdb

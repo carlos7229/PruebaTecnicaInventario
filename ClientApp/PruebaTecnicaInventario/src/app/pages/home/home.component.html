@@ -1,0 +1,29 @@
+<h2 class="content-block">Home</h2>
+<div class="content-block">
+  <div class="dx-card responsive-paddings">
+    <form (submit)="onFormSubmit($event)">
+      <div id="form-container">
+        <dx-form id="form" [formData]="formData">
+          <dxi-item itemType="group" caption="Sale Information">
+            <dxi-item dataField="id" [editorOptions]="{ visible: false}"></dxi-item>
+            <dxi-item dataField="productId" editorType="dxSelectBox" [editorOptions]="{ dataSource: products, searchEnabled: true, value: '', valueExpre: 'id', displayExpr: 'desciption', dataField: 'id' }">
+              <dxi-validation-rule type="required"></dxi-validation-rule>
+            </dxi-item>            
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+            <dxi-item dataField="clientId" editorType="dxSelectBox" [editorOptions]="{ items: clients, searchEnabled: true, value: '', valueExpre: 'id', displayExpr: 'fullName' }">
+              <dxi-validation-rule type="required"></dxi-validation-rule>
+            </dxi-item>
+            <dxi-item dataField="saleDate" editorType="dxDateBox" [editorOptions]="{ value: null}">
+              <dxi-validation-rule type="required"></dxi-validation-rule>
+            </dxi-item>
+            <dxi-item dataField="saleQuantity">
+              <dxi-validation-rule type="required"></dxi-validation-rule>
+            </dxi-item>
+          </dxi-item>
+          <dxi-item itemType="button" horizontalAlignment="center" [buttonOptions]="buttonOptions">
+          </dxi-item>
+        </dx-form>
+      </div>
+    </form>
+  </div>
+</div>

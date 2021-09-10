@@ -1,0 +1,23 @@
+<h2 class="content-block">Stock</h2>
+
+<dx-data-grid class="dx-card wide-card" [dataSource]="allStock" keyExpr="id" [showBorders]="false"
+  >
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  <dxi-column 
+    dataField="code" 
+    caption="Code" 
+    [hidingPriority]="1">
+  </dxi-column>
+  <dxi-column 
+    dataField="product" 
+    caption="Description" 
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column 
+    dataField="quantity" 
+    caption="Quantity" 
+    [hidingPriority]="3">
+  </dxi-column>
+</dx-data-grid>

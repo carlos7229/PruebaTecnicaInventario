@@ -1,0 +1,40 @@
+<h2 class="content-block">Clients</h2>
+
+<dx-data-grid class="dx-card wide-card" [dataSource]="clients" keyExpr="id" [showBorders]="false"
+    (onRowUpdated)="updateRow($event)"
+  (onRowRemoved)="removeRow($event)"
+  (onRowInserted)="insertRow($event)"
+  [columnAutoWidth]="true">
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  
+
+  <dxo-editing mode="popup" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true">
+    <dxo-popup title="Client Info" [showTitle]="true" [width]="700" [height]="525">
+    </dxo-popup>
+    <dxo-form>
+      <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+        <dxi-item dataField="fullName">
+          <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-item>
+        <dxi-item dataField="identificationNumber">
+          <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-item>
+        <dxi-item dataField="age">
+          <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-item>
+      </dxi-item>
+    </dxo-form>
+  </dxo-editing>
+  <dxi-column dataField="fullName" caption="Full Name" [hidingPriority]="1">
+  </dxi-column>
+  <dxi-column dataField="identificationNumber" caption="identification Number" [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column dataField="age" caption="Age" [hidingPriority]="3">
+  </dxi-column>
+  <dxi-column dataField="createdAt" caption="Created At" dataType="datetime" [hidingPriority]="4">
+  </dxi-column>
+
+</dx-data-grid>
+<dx-toast [(visible)]="isVisible" [type]="type" [message]="message"></dx-toast>

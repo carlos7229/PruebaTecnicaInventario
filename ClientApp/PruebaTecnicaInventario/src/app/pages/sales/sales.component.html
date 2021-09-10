@@ -1,0 +1,35 @@
+<h2 class="content-block">Sales</h2>
+
+<dx-data-grid class="dx-card wide-card" [dataSource]="sales" keyExpr="id" [showBorders]="false"
+  >
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  <dxi-column 
+    dataField="code" 
+    caption="Code" 
+    [hidingPriority]="1">
+  </dxi-column>
+  <dxi-column 
+    dataField="product" 
+    caption="Description" 
+    [hidingPriority]="2">
+  </dxi-column>
+  <dxi-column 
+    dataField="quantity" 
+    caption="Quantity" 
+    [hidingPriority]="3">
+  </dxi-column>
+  <dxi-column 
+    dataField="saleValue" 
+    caption="Total Value"     
+    dataType="number" 
+    [hidingPriority]="4">
+  </dxi-column>
+  <dxi-column 
+    dataField="saleDate" 
+    caption="Sale Date" 
+    dataType="datetime"
+    [hidingPriority]="5">
+  </dxi-column>
+</dx-data-grid>
